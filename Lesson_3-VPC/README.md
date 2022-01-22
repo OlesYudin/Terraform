@@ -20,7 +20,9 @@
 
 ### <div align="center">Схема сети</div>
 
-<div align="center"> ![Scheme of creation VPC in AWS](https://github.com/OlesYudin/Terraform/blob/main/Lesson_3-VPC/images/Network%20scheme.png "Scheme of creation VPC in AWS") </div>
+<p align="center">
+  <img src="https://github.com/OlesYudin/Terraform/blob/main/Lesson_3-VPC/images/Network%20scheme.png" alt="Scheme of creation VPC in AWS"/>
+</p>
 
 ## [1. Создание VPC](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc "1. Создание VPC")
 
