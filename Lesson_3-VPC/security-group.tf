@@ -16,17 +16,11 @@ resource "aws_security_group" "sg" {
     }
   }
 
-  # Outbound rules for 22,80,8080 ports
-  # Open 22 to my IP and my VPC
-  # Open 80, 8080 to all in the Internet
-  dynamic "egress" {
-    for_each = var.sg_port_cidr
-    content {
-      from_port   = egress.key
-      to_port     = egress.key
-      protocol    = "tcp"
-      cidr_blocks = egress.value
-    }
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
   }
 
   tags = {
