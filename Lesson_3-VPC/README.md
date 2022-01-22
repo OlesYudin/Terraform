@@ -20,7 +20,7 @@
 
 ### Схема сети
 
-(https://github.com/OlesYudin/Terraform/blob/main/Lesson_3-VPC/images/Network%20scheme.png "Scheme of creation VPC in AWS")
+![Scheme of creation VPC in AWS](https://github.com/OlesYudin/Terraform/blob/main/Lesson_3-VPC/images/Network%20scheme.png "Scheme of creation VPC in AWS")
 
 ## [1. Создание VPC](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc "1. Создание VPC")
 
