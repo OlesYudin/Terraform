@@ -16,7 +16,7 @@ variable "sg_port_cidr" {
   description = "Allowed EC2 ports"
   type        = map(any)
   default = {
-    "22"   = ["195.88.72.206/32", "172.31.0.0/16"]
+    "22"   = ["X.X.X.X/32", "172.31.0.0/16"] # Use your IP
     "80"   = ["0.0.0.0/0"]
     "8080" = ["0.0.0.0/0"]
   }
