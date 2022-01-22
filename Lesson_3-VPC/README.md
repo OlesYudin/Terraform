@@ -18,9 +18,9 @@
 6. `cidr_vpc` - CIDR блок для VPC с указанием префикса
 7. `public_subnet` - список подсетей в VPC
 
-### Схема сети
+### <div align="center">Схема сети</div>
 
-![Scheme of creation VPC in AWS](https://github.com/OlesYudin/Terraform/blob/main/Lesson_3-VPC/images/Network%20scheme.png "Scheme of creation VPC in AWS")
+<div align="center">![Scheme of creation VPC in AWS](https://github.com/OlesYudin/Terraform/blob/main/Lesson_3-VPC/images/Network%20scheme.png "Scheme of creation VPC in AWS")</div>
 
 ## [1. Создание VPC](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc "1. Создание VPC")
 
