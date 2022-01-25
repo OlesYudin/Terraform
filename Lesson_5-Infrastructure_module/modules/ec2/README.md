@@ -1,6 +1,6 @@
 # <div align="center">Creating EC2 instance</div>
 
-Создание AWS EC2 instance в каждой подсети, согласно [заданой сетефой инфраструктуре](https://link.com "сетефой инфраструктуре") с подключением [security group](https://link.com "security group").
+Создание AWS EC2 instance в каждой подсети, согласно [заданой сетефой инфраструктуре](https://github.com/OlesYudin/Terraform/tree/main/Lesson_5-Infrastructure_module/modules/vpc "сетефой инфраструктуре") с подключением [security group](https://github.com/OlesYudin/Terraform/tree/main/Lesson_5-Infrastructure_module/modules/Security-group "security group").
 
 ## Instance settings:
 
