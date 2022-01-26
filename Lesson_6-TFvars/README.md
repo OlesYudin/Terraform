@@ -10,15 +10,15 @@
 
 ### Типичная структура файлов:
 
-`[data.tf](https://www.terraform.io/language/data-sources "data.tf")` - источник данных для Tarraform, которая может быть взята не из Terraform файлов
+- [`data.tf`](https://www.terraform.io/language/data-sources "data.tf") - источник данных для Tarraform, которая может быть взята не из Terraform файлов
 
-`main.tf` - описание ифраструктуры как кода
+- `main.tf` - описание ифраструктуры как кода
 
-`[outputs.tf](https://www.terraform.io/language/values/outputs "outputs.tf")` - вывод данных
+- [`outputs.tf`](https://www.terraform.io/language/values/outputs "outputs.tf")` - вывод данных
 
-`[variables.tf](https://www.terraform.io/language/values/variables "variables.tf")` - Terraform переменные
+- [`variables.tf`](https://www.terraform.io/language/values/variables "variables.tf")` - Terraform переменные
 
-`[*.auto.tfvars](https://www. "*.auto.tfvars")` - Глобальные переменные
+- [`*.auto.tfvars`](https://github.com/OlesYudin/Terraform/blob/main/Lesson_6-TFvars/dev.auto.tfvars "*.auto.tfvars") - Глобальные переменные
 
 ### [Глобальные переменные](https://www.terraform.io/cloud-docs/workspaces/variables "Глобальные переменные")
 
