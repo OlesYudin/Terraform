@@ -2,11 +2,11 @@
 
 ### Структура проекта:
 
-`[ec2](https:// "ec2")` - создание AWS EC2 instance
+- [`ec2`](https://github.com/OlesYudin/Terraform/tree/main/Lesson_6-TFvars/modules/ec2 "ec2") - создание AWS EC2 instance
 
-`[Security-group](https:// "Security-group")` - создание Security Group для Virtual Private Cloud
+- [`Security-group`](https://github.com/OlesYudin/Terraform/tree/main/Lesson_6-TFvars/modules/Security-group "Security-group") - создание Security Group для Virtual Private Cloud
 
-`[vpc](https:// "vpc")` - создание сети
+- [`vpc`](https://github.com/OlesYudin/Terraform/tree/main/Lesson_6-TFvars/modules/vpc "vpc") - создание сети
 
 ### Типичная структура файлов:
 
@@ -20,11 +20,11 @@
 
 `[*.auto.tfvars](https://www. "*.auto.tfvars")` - Глобальные переменные
 
-### Глобальные переменные
+### [Глобальные переменные](https://www.terraform.io/cloud-docs/workspaces/variables "Глобальные переменные")
 
-Глобальные переменные задаются в файле terraform.tfvars или если их несколько name.auto.tfvars. При использовании глобальных перменных, локальные переменные будут полностью игнорироваться, приоритет всегда у глобальных переменных.
+Глобальные переменные задаются в файле _terraform.tfvars_ или если их несколько _name.auto.tfvars_. При использовании глобальных перменных, локальные переменные будут полностью **игнорироваться**, приоритет всегда у глобальных переменных.
 
-#### Структура файла [name.auto.tfvars](Https:// "*.auto.tfvars")
+#### Структура файла [name.auto.tfvars](https://github.com/OlesYudin/Terraform/blob/main/Lesson_6-TFvars/dev.auto.tfvars "*.auto.tfvars")
 
 ```
 region = "us-east-1"
@@ -32,7 +32,7 @@ env = "Dev"
 instance_type = "t2.micro"
 ```
 
-Файл состоит из набора _ключ_ --> _значение_. Для того что бы переменные были инициализированы в корневом модуле (root module) создается файл [`variables.tf`](https:// "variables.tf") в котором обьявляються перменные из глобальных перемен, выглядите это следующим образом
+Файл состоит из набора _ключ_ --> _значение_. Для того что бы переменные были инициализированы в корневом модуле (root module) создается файл [`variables.tf`](https://github.com/OlesYudin/Terraform/blob/main/Lesson_6-TFvars/variables.tf "variables.tf") в котором обьявляються перменные из глобальных перемен, выглядите это следующим образом
 
 ```
 variable "region" {}
@@ -40,7 +40,7 @@ variable "env" {}
 variable "instance_type" {}
 ```
 
-В [`variables.tf`](https:// "variables.tf") в переменные ничего не записывается, именно сюда будет ссылаться модуль и искать переменные, а уже этот файл будет ссылаться на файл **_name.auto.tfvars_**.
+В [`variables.tf`](https://github.com/OlesYudin/Terraform/blob/main/Lesson_6-TFvars/variables.tf "variables.tf") в переменные ничего не записывается, именно сюда будет ссылаться модуль и искать переменные, а уже этот файл будет ссылаться на файл **_name.auto.tfvars_**.
 
 ```
 terraform init
@@ -49,12 +49,12 @@ terraform apply -var-file="dev.auto.tfvars"
 terraform apply -var-file="prod.auto.tfvars"
 ```
 
-При использовании [`dev.auto.tfvars`](https:// "dev.auto.tfvars") инфраструктура создасться для Developer окружения
+При использовании [`dev.auto.tfvars`](https://github.com/OlesYudin/Terraform/blob/main/Lesson_6-TFvars/dev.auto.tfvars "dev.auto.tfvars") инфраструктура создасться для Developer окружения
 
-При использовании [`prod.auto.tfvars`](https:// "dev.auto.tfvars") инфраструктура создасться для Production окружения
+При использовании [`prod.auto.tfvars`](https://github.com/OlesYudin/Terraform/blob/main/Lesson_6-TFvars/prod.auto.tfvars "dev.auto.tfvars") инфраструктура создасться для Production окружения
 
 ### <div align="center">Схема сети</div>
 
 <p align="center">
-  <img src="https://" alt="Scheme of creation VPC in AWS"/>
+  <img src="https://github.com/OlesYudin/Terraform/blob/main/Lesson_6-TFvars/images/Network%20scheme.png" alt="Scheme of creation VPC in AWS"/>
 </p>
