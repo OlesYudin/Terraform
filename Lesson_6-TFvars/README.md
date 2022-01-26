@@ -53,6 +53,8 @@ terraform apply -var-file="prod.auto.tfvars"
 
 При использовании [`prod.auto.tfvars`](https://github.com/OlesYudin/Terraform/blob/main/Lesson_6-TFvars/prod.auto.tfvars "dev.auto.tfvars") инфраструктура создасться для Production окружения
 
+[Подробнее о переменных](https://www.youtube.com/watch?v=oB7l8GOpVaY&t=1017s "Подробнее о переменных")
+
 ### <div align="center">Схема сети</div>
 
 <p align="center">
