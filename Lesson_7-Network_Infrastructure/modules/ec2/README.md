@@ -16,24 +16,13 @@
 
 ## Instance settings:
 
-| Value                  | Default                                                                                                                                                                                                                                                                  |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Region                 | [us-east-2](https://github.com/OlesYudin/Terraform/blob/main/Lesson_7-Network_Infrastructure/modules/ec2/variables.tf#:~:text=variable%20%22default_region%22%20%7B,%7D "us-east-2")                                                                                     |
-| AMI                    | [Ubuntu 16.04 Server](https://github.com/OlesYudin/Terraform/blob/main/Lesson_7-Network_Infrastructure/modules/ec2/data.tf "Ubuntu 16.04 Server")                                                                                                                        |
-| Environment            | [Developer](https://github.com/OlesYudin/Terraform/blob/main/Lesson_7-Network_Infrastructure/modules/ec2/variables.tf#:~:text=variable%20%22env%22%20%7B,%7D "Developer")                                                                                                |
-| Count                  | 1 instance in 1 AZ, as default [**2**](<https://github.com/OlesYudin/Terraform/blob/main/Lesson_7-Network_Infrastructure/modules/ec2/main.tf#:~:text=count%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3D%20length(var.public_subnet)> "2")                    |
-| Key for SSH connection | [your_privare_AWS_key.pem](https://github.com/OlesYudin/Terraform/blob/main/Lesson_7-Network_Infrastructure/modules/ec2/variables.tf#:~:text=variable%20%22ssh_key%22%20%7B,%7D "your_privare_AWS_key.pem")                                                              |
-| Download packages      | [apache2](https://httpd.apache.org/ "apache2")                                                                                                                                                                                                                           |
-| Subnet                 | Create in [VPC](https://github.com/OlesYudin/Terraform/tree/main/Lesson_7-Network_Infrastructure/modules/vpc "VPC") module                                                                                                                                               |
-| Security Group         | Open [22, 80, 8080](https://github.com/OlesYudin/Terraform/tree/main/Lesson_7-Network_Infrastructure/modules/Security-group#:~:text=in%20Security%20Group)-,Protocol,Public%20IP%20of%20my%20provider,-resource%20%22aws_security_group%22%20%22sg "22, 80, 8080") ports |
-
-ssh-keygen -t ed25519 -b 512 -f ~/.ssh/key
-
-eval "$(ssh-agent)"
-ssh-add ~/.ssh/key
-ssh-copy-id -i ~/.ssh/key ubuntu@172.31.11.208
-ssh -i ~/.ssh/key ubuntu@172.31.11.208
-
-nano ~/.ssh/private_ec2
-
-chmod 400 ~/.ssh/privare_ec2
+| Value                  | Default                                                                                                                                                                                                                                                                 |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Region                 | [us-east-2](https://github.com/OlesYudin/Terraform/blob/main/Lesson_7-Network_Infrastructure/modules/ec2/variables.tf#:~:text=variable%20%22default_region%22%20%7B,%7D "us-east-2")                                                                                    |
+| AMI                    | [Ubuntu 16.04 Server](https://github.com/OlesYudin/Terraform/blob/main/Lesson_7-Network_Infrastructure/modules/ec2/data.tf "Ubuntu 16.04 Server")                                                                                                                       |
+| Environment            | [Developer](https://github.com/OlesYudin/Terraform/blob/main/Lesson_7-Network_Infrastructure/modules/ec2/variables.tf#:~:text=variable%20%22env%22%20%7B,%7D "Developer")                                                                                               |
+| Count                  | 1 instance in 1 AZ, as default [**2**](<https://github.com/OlesYudin/Terraform/blob/main/Lesson_7-Network_Infrastructure/modules/ec2/main.tf#:~:text=count%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3D%20length(var.public_subnet)> "2")                   |
+| Key for SSH connection | [your_privare_AWS_key.pem](https://github.com/OlesYudin/Terraform/blob/main/Lesson_7-Network_Infrastructure/modules/ec2/variables.tf#:~:text=variable%20%22ssh_key%22%20%7B,%7D "your_privare_AWS_key.pem")                                                             |
+| Download packages      | [apache2](https://httpd.apache.org/ "apache2")                                                                                                                                                                                                                          |
+| Subnet                 | Create in [VPC](https://github.com/OlesYudin/Terraform/tree/main/Lesson_7-Network_Infrastructure/modules/vpc "VPC") module                                                                                                                                              |
+| Security Group         | Open [22, 80, 8080](https://github.com/OlesYudin/Terraform/tree/main/Lesson_7-Network_Infrastructure/modules/Security-group#:~:text=in%20Security%20Group-,Protocol,Public%20IP%20of%20my%20provider,-resource%20%22aws_security_group%22%20%22sg "22, 80, 8080") ports |
