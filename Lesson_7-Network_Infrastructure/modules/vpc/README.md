@@ -33,7 +33,7 @@
 ### <div align="center">Схема сети</div>
 
 <p align="center">
-  <img src="https://github.com/OlesYudin/Terraform/blob/main/Lesson_7-Network_Infrastructure/images/Network%20scheme.png" alt="Scheme of Network in AWS"/>
+  <img src="https://github.com/OlesYudin/Terraform/blob/main/Lesson_7-Network_Infrastructure/images/Network%20infrastructure%20DEMO_2.png" alt="Scheme of Network in AWS"/>
 </p>
 
 ### [1. Создание VPC](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc "1. Создание VPC")
