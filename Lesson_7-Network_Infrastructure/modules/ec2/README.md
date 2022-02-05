@@ -4,7 +4,7 @@
 
 ## Description of EC2:
 
-1. [Bastion Host](https://github.com/OlesYudin/Terraform/blob/main/Lesson_7-Network_Infrastructure/modules/ec2/main.tf#:~:text=sloc)%20%201.59%20KB-,Raw,%7D,-%23%20resource%20%22aws_instance%22%20%22webserver "Bastion Host") in [Public Subnet](https://github.com/OlesYudin/Terraform/blob/main/Lesson_7-Network_Infrastructure/modules/vpc/variables.tf#:~:text=%22-,172.31.2.0/24,-%22 "Public Subnet")
+1. [Bastion Host](https://github.com/OlesYudin/Terraform/blob/main/Lesson_7-Network_Infrastructure/modules/ec2/main.tf#:~:text=Blame-,resource%20%22aws_instance%22%20%22bastion%22%20%7B,%7D,-%23%20resource%20%22aws_instance%22%20%22webserver "Bastion Host") in [Public Subnet](https://github.com/OlesYudin/Terraform/blob/main/Lesson_7-Network_Infrastructure/modules/vpc/variables.tf#:~:text=%22-,172.31.2.0/24,-%22 "Public Subnet")
 2. 2 EC2 instance in Private Subnet that created by [ASG](https://github.com/OlesYudin/Terraform/blob/main/Lesson_7-Network_Infrastructure/modules/ec2/asg.tf "ASG")
 
 ## Connection to EC2 in Private Subnet:
@@ -14,7 +14,7 @@
 3. Give public key to destination point (EC2 in private subnet) `ssh-copy-id -i ~/.ssh/key_name.pub ubuntu@private_ip`. Username of user in instance **'ubuntu'**
 4. Connect to instance `ssh -i ~/.ssh/key_name ubuntu@private_ip`
 
-## Instance settings of [Bastion Host](https://github.com/OlesYudin/Terraform/blob/main/Lesson_7-Network_Infrastructure/modules/ec2/main.tf#:~:text=sloc)%20%201.59%20KB-,Raw,%7D,-%23%20resource%20%22aws_instance%22%20%22webserver "Bastion Host"):
+## Instance settings of [Bastion Host](https://github.com/OlesYudin/Terraform/blob/main/Lesson_7-Network_Infrastructure/modules/ec2/main.tf#:~:text=Blame-,resource%20%22aws_instance%22%20%22bastion%22%20%7B,%7D,-%23%20resource%20%22aws_instance%22%20%22webserver "Bastion Host"):
 
 | Value                  | Default                                                                                                                                                                                                                           |
 | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
