@@ -14,7 +14,7 @@
 
 - [`variables.tf`](https://github.com/OlesYudin/Terraform/tree/main/Lesson_9-ECR/variables.tf "variables.tf") - переменные использованные в проекте
 
-### [Elastic Container Registry](https://aws.amazon.com/ru/ecr/ "Глобальные переменные")
+### [Elastic Container Registry](https://aws.amazon.com/ru/ecr/ "Elastic Container Registry")
 
 ECR это аналог Docker Hub, то есть это место, где можно хранить docker-образы. Изначально создается репозиторий в котором можно настроить различные политики, такие как **life cycle police** и **security policy**. Далее можно загружать образы в необходимый репозиторий.
 
