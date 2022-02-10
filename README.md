@@ -9,3 +9,7 @@ Terraform lessons practices that will help you understand how to create IaC with
 3. [Lesson 6. Global Variables and multi global variables](https://github.com/OlesYudin/Terraform/tree/main/Lesson_6-TFvars "Global Variables and multi global variables")
 
 4. [Lesson 7. Network Infrastructure with modules (VPC, SG, NAT, ALB, ASG)](https://github.com/OlesYudin/Terraform/tree/main/Lesson_7-Network_Infrastructure "Lesson 7. Network Infrastructure with modules (VPC, SG, NAT, ALB, ASG)")
+
+5. [Lesson 8. Network infrastructure like in Lesson 7 but using global vars](https://github.com/OlesYudin/Terraform/tree/main/Lesson_8-Network_modules "Lesson 8. Network infrastructure like in Lesson 7 but using global vars")
+
+6. [Lesson 9. Create ECR](https://github.com/OlesYudin/Terraform/tree/main/Lesson_9-ECR "Lesson 9. Create ECR")
